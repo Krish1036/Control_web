@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AC Controller</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <i class="uil uil-bars navOpenBtn"></i>
+    <a href="#" class="logo">KrishnaFarms</a>     
+    
+    <ul class="nav-links">
+      <i class="uil uil-times navCloseBtn"></i>
+      <li><a class="active" href="#">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="shop.html">Products</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
+ <section id="Product1" class="section-p1"> 
+    <div class="pro-container">
+       <div class="pro">
+
+        <div class="container">  <!-- button AC--> 
+          <label for="ac-button">AC</label>
+          <button id="ac-button" class="ac-button"></button>
+        </div> 
+      </div>
+    </div>         
+  </section>
+
+  <section id="Product2" class="section-p2"> 
+    <div class="pro-container2">
+       <div class="pro">
+        <div class="gauge">
+          <div class="gauge-body">
+            <div class="gauge-fill"></div>
+            <div class="gauge-cover"></div>
+          </div>
+        </div>  
+      </div>  
+    </div>      
+  </section>
+
+  <section id="Product3" class="section-p3"> 
+    <div class="chart-container">
+      <button id="hideShowButton">Hide</button>
+      <div id="chartContent">
+          <button id="live">Live</button>
+          <button id="last30days">Last 30 Days</button>
+          <button id="lastyear">Last Year</button>
+          <canvas id="myChart"></canvas>
+      </div>
+      <div class="resize-handle"></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>

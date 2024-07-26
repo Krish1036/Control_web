@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Temperature Chart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chart-container">
+        <button id="hideShowButton">Hide</button>
+        <div id="chartContent">
+            <button id="live">Live</button>
+            <button id="last30days">Last 30 Days</button>
+            <button id="lastyear">Last Year</button>
+            <canvas id="myChart"></canvas>
+        </div>
+        <div class="resize-handle"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

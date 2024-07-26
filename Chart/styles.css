@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.chart-container {
+  border: 1px solid #cce7b0;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  padding: 10px 12px;
+  margin: 20px auto;
+  width: 10%;
+  min-width: 250px;
+  border-radius: 25px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s ease;
+   /* Necessary for absolute positioning of resize handle */
+  
+  /* 
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #cce7b0;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  margin: 15px 0;
+  transition: 0.2s ease;
+  position: relative; */
+}
+
+#chartContent {
+display: block; /* Ensure initial display */
+position: relative;
+}
+
+#chartContent.hidden {
+display: none;
+}
+
+canvas {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+}
+
+.resize-handle {
+width: 20px;
+height: 20px;
+background-color: green;
+border-radius: 50%;
+position: absolute;
+bottom: -10px; /* Adjust position as needed */
+right: 0;
+cursor: move; /* Change cursor to indicate draggable */
+}
+
+#chartContent.hidden + .resize-handle {
+display: none;
+}
+width: 23%;
+min-width: 250px;
+padding: 10px 12px;
+border: 1px solid #cce7b0;
+border-radius: 25px;
+cursor: pointer;
+box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+margin: 15px 0;
+transition: 0.2s ease;
+position: relative;
